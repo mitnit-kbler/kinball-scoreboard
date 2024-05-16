@@ -1,0 +1,95 @@
+
+body {
+    font-family: Tahoma, Arial, sans-serif;
+    background-color: #f0f0f0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.scoreboard {
+    display: flex;
+    justify-content: space-around;
+    width: 90%;
+    background-color: #fff;
+	padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.team {
+    text-align: center;
+    width: 30%;
+	padding: 10px;
+    cursor: pointer; /* Make the score area clickable */
+}
+
+#team-pink {
+    background-color: pink;
+}
+
+#team-grey {
+    background-color: lightgrey;
+}
+
+#team-black {
+    background-color: black;
+    color: white;
+}
+
+#team-pink p, #team-grey p, #team-black p {
+    font-size: calc(35vh);
+    margin: 40px 0;
+	font-family: 'Arial Narrow', Tahoma, Arial, sans-serif;
+	font-weight: bold; 
+    letter-spacing: -5px; 
+}
+
+.team h2 {
+    font-size: calc(4.5vh);
+    margin-bottom: 5px;
+}
+
+.button-container {
+    display: flex;
+    justify-content: space-around;
+    width: 50%;
+    margin-top: 20px;
+}
+
+button {
+    font-size: calc(3vh);
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    margin: 5px;
+	box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add shadow to buttons */
+}
+
+button:hover {
+	background-color: #0056b3;
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15); /* Increase shadow on hover */
+}
+
+button.undo, button.reset {
+    background-color: #000;
+}
+
+button.undo:hover, button.reset:hover {
+    background-color: #333;
+}
+
+button:last-of-type {
+    background-color: #ff6347;
+}
+
+button:last-of-type:hover {
+    background-color: #cc5040;
+}
